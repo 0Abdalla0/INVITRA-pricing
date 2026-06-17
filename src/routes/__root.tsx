@@ -78,10 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
       { title: "INVITRA — Digital Wedding Invitations Pricing" },
-      { name: "description", content: "Choose the perfect digital wedding invitation package for your special day. Premium, elegant, customizable wedding invitations by INVITRA." },
+      {
+        name: "description",
+        content:
+          "Choose the perfect digital wedding invitation package for your special day. Premium, elegant, customizable wedding invitations by INVITRA.",
+      },
       { name: "author", content: "INVITRA" },
       { property: "og:title", content: "INVITRA — Pricing" },
-      { property: "og:description", content: "Digital wedding invitations crafted for your story." },
+      {
+        property: "og:description",
+        content: "Digital wedding invitations crafted for your story.",
+      },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

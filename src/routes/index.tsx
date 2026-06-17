@@ -77,7 +77,15 @@ function Section({
   );
 }
 
-function SectionTitle({ eyebrow, title, subtitle }: { eyebrow?: string; title: string; subtitle?: string }) {
+function SectionTitle({
+  eyebrow,
+  title,
+  subtitle,
+}: {
+  eyebrow?: string;
+  title: string;
+  subtitle?: string;
+}) {
   return (
     <motion.div variants={fadeUp} className="mx-auto max-w-2xl text-center">
       {eyebrow && (
@@ -183,7 +191,10 @@ function PricingPage() {
       {/* HERO */}
       <header className="relative px-5 sm:px-8 pt-16 sm:pt-24 pb-20 sm:pb-28">
         <FloralCorner className="pointer-events-none absolute -top-4 -left-4 w-40 sm:w-64 text-sage-deep/40" />
-        <FloralCorner flip className="pointer-events-none absolute -top-4 -right-4 w-40 sm:w-64 text-sage-deep/40" />
+        <FloralCorner
+          flip
+          className="pointer-events-none absolute -top-4 -right-4 w-40 sm:w-64 text-sage-deep/40"
+        />
         <FloralCorner className="pointer-events-none absolute -bottom-8 left-1/2 -translate-x-1/2 w-72 sm:w-96 rotate-180 text-gold/30" />
 
         <motion.div
@@ -205,7 +216,10 @@ function PricingPage() {
             INVITRA <span className="italic text-sage-deep">Pricing</span>
           </motion.h1>
 
-          <motion.p variants={fadeUp} className="mt-6 text-base sm:text-lg text-charcoal/70 leading-relaxed max-w-xl mx-auto">
+          <motion.p
+            variants={fadeUp}
+            className="mt-6 text-base sm:text-lg text-charcoal/70 leading-relaxed max-w-xl mx-auto"
+          >
             Choose the perfect digital wedding invitation package for your special day.
           </motion.p>
 
@@ -247,7 +261,9 @@ function PricingPage() {
                 </h3>
                 <div className="mt-6 flex items-baseline justify-center gap-1.5">
                   <span className="text-xs uppercase tracking-[0.2em] text-charcoal/60">EGP</span>
-                  <span className="font-serif-display text-5xl sm:text-6xl text-charcoal">{p.price}</span>
+                  <span className="font-serif-display text-5xl sm:text-6xl text-charcoal">
+                    {p.price}
+                  </span>
                 </div>
                 <p className="mt-4 text-sm text-charcoal/70 leading-relaxed">{p.desc}</p>
               </div>
@@ -307,7 +323,9 @@ function PricingPage() {
               </div>
               <div className="min-w-0 flex-1">
                 <p className="truncate font-serif-display text-lg text-charcoal">{name}</p>
-                <p className="text-xs uppercase tracking-[0.15em] text-charcoal/55">Add-on service</p>
+                <p className="text-xs uppercase tracking-[0.15em] text-charcoal/55">
+                  Add-on service
+                </p>
               </div>
               <div className="shrink-0 text-right">
                 <p className="font-serif-display text-xl text-charcoal">{price}</p>
@@ -338,7 +356,9 @@ function PricingPage() {
               <div className="grid h-14 w-14 place-items-center rounded-full bg-sage/40 text-sage-deep transition-colors group-hover:bg-gold/20 group-hover:text-gold">
                 <Icon className="h-6 w-6" strokeWidth={1.6} />
               </div>
-              <p className="font-serif-display text-base sm:text-lg leading-snug text-charcoal">{label}</p>
+              <p className="font-serif-display text-base sm:text-lg leading-snug text-charcoal">
+                {label}
+              </p>
             </motion.div>
           ))}
         </motion.div>
@@ -361,7 +381,10 @@ function PricingPage() {
             </div>
             <ul className="mt-8 space-y-4">
               {terms.map((t, i) => (
-                <li key={t} className="flex items-start gap-4 text-sm sm:text-base text-charcoal/80 leading-relaxed">
+                <li
+                  key={t}
+                  className="flex items-start gap-4 text-sm sm:text-base text-charcoal/80 leading-relaxed"
+                >
                   <span className="mt-1 font-script text-xl leading-none text-gold">{i + 1}.</span>
                   <span>{t}</span>
                 </li>

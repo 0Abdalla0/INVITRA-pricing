@@ -42,8 +42,22 @@ export function Sprig({ className }: { className?: string }) {
       <g fill="currentColor">
         {[10, 18, 26, 34, 42, 50].map((x, i) => (
           <g key={x}>
-            <ellipse cx={x} cy={8} rx="3.2" ry="1.4" transform={`rotate(-25 ${x} 8)`} opacity={0.7 - i * 0.05} />
-            <ellipse cx={x} cy={16} rx="3.2" ry="1.4" transform={`rotate(25 ${x} 16)`} opacity={0.7 - i * 0.05} />
+            <ellipse
+              cx={x}
+              cy={8}
+              rx="3.2"
+              ry="1.4"
+              transform={`rotate(-25 ${x} 8)`}
+              opacity={0.7 - i * 0.05}
+            />
+            <ellipse
+              cx={x}
+              cy={16}
+              rx="3.2"
+              ry="1.4"
+              transform={`rotate(25 ${x} 16)`}
+              opacity={0.7 - i * 0.05}
+            />
           </g>
         ))}
         <circle cx="56" cy="12" r="1.5" />
