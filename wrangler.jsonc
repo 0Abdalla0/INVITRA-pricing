@@ -1,6 +1,10 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
+<<<<<<< HEAD
   "name": "invitra-pricing",
+=======
+  "name": "tanstack-start-ts",
+>>>>>>> 7ab765e79121bf570c137307bad69c07396d40c9
   "compatibility_date": "2026-06-17",
   "observability": {
     "enabled": true
